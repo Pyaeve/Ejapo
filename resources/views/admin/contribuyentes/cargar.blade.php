@@ -28,7 +28,7 @@
                          {!! BootForm::checkbox('Es Exportador','exportador') !!}
               
                     {!! BootForm::select('Tipo Contribuyente','tipo_contribuyente')->options(['1'=>'Fisico'])->addClass('tipo_contribuyente') !!}
-                    {!! BootForm::select('Regimen Contribuyente','regimen')->options(['1'=>'IRP'])->addClass('reg_tributario') !!}                             
+                    {!! BootForm::select('Regimen Contribuyente','regimen')->options(['1'=>'IRP','2'=>'IVA'])->addClass('reg_tributario') !!}                             
                    
                     {!! BootForm::text('Denominacion, Nombre o Raz&oacute;n Social','desc')->addClass('desc') !!}
                     {!! BootForm::select('Tipo Documento','tipo_doc')->options($tipo_doc_data) !!}

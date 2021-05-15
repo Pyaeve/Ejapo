@@ -80,7 +80,7 @@ class FamiliaresController extends Controller
     	$user_id=Auth::user()->id;
     	$emp_id=DB::select("SELECT FNC_DAME_EMPRESA_ID('".$user_id."') AS empresa_id");
     	$emp_id=$emp_id[0]->empresa_id;
-      $data=DB::select("CALL PRO_LISTAR_CONTRIBUYENTES_WEB_CLIENTES_TODOS('".$emp_id."');");
+      $data=DB::select("CALL PRO_LISTAR_CONTRIBUYENTES_WEB_CLIENTES_TODOS('".$emp_id."','".$user_id."');");
     
         return view('admin.familiares.seleccionar',['data'=>$data]);
     }

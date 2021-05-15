@@ -20,7 +20,7 @@
                 <div class="card-body" style="align-self: center">
                         {!! BootForm::open()->get() !!}
                                
-                        {!! BootForm::select('Periodo','p')->options(['2020'=>'2020']) !!}
+                        {!! BootForm::select('Periodo','p')->options(['2020'=>'2020','2021'=>'2021']) !!}
                          
                           {!! BootForm::submit('Filtrar')->addClass('btn btn-primary') !!}
 

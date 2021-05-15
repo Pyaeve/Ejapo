@@ -77,7 +77,9 @@ class LibroVentasController extends Controller
         $lv->cuotas=$data['cuotas'];
         $lv->timbrado=$data['timbrado'];
         $lv->save();
-        return redirect(rouye('admin.contribuyentes.balance.iva',['id'=>$data['cliente_id']]));
+        $url =route('admin.contribuyentes.balance.iva',['id'=>$data['cliente_id']]);
+        $url .="?y=2020&m=05";
+        return redirect($url);
 
 
     

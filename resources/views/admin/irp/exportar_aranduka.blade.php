@@ -20,7 +20,7 @@
                                {!! BootForm::open()->action(route('admin.irp.aranduka.exportar.procesar')) !!}
                                {!! BootForm::hidden('empresa_id')->value($empresa) !!}
                           {!! BootForm::select('Cliente','cliente_id')->options($clientes) !!}     
-                        {!! BootForm::select('Periodo','periodo')->options(['2020'=>'2020']) !!}
+                        {!! BootForm::select('Periodo','periodo')->options(['2020'=>'2020','2021'=>'2021']) !!}
                          
                           {!! BootForm::submit('Exportar a Aranduka')->addClass('btn btn-primary') !!}
 

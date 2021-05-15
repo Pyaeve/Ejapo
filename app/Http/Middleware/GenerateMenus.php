@@ -85,14 +85,16 @@ class GenerateMenus
                  //$menu->contribuyentes->add('Familiares', '#')->add('Cargar ', route('admin.familiares.clientes'));
                
                
-                 /*
-                 $menu->add('Iva', '#');
-                 $menu->iva->add('Cargar Compras', route('admin.iva.compras.clientes'));
-                 $menu->iva->add('Cargar Ventas', route('admin.iva.ventas.clientes'));
-                 */
+                 
+              
                  $menu->add('Irp', ['url'=>'#','id'=>'irp','title'=>'IRP']);
                  $menu->irp->add('Cargar Ingresos', route('admin.irp.ingresos.clientes'));
                  $menu->irp->add('Cargar Egresos', route('admin.irp.egresos.clientes'));
+                  $menu->add('Iva', '#')->prepend('<span class="fa fa-book"></span> ');
+                 $menu->iva->add('Cargar Compras', route('admin.iva.compras.clientes'))->prepend('<span class="fa fa-plus"></span> ');
+                 $menu->iva->add('Cargar Ventas', route('admin.iva.ventas.clientes'))->prepend('<span class="fa fa-plus"></span> ');
+                $menu->iva->add('Importar desde Hechauka', route('admin.iva.importar.ventas.clientes'))->prepend('<span class="fa fa-cloud-upload"></span> ');
+                 $menu->iva->add('Exportar a Hechauka', '#')->prepend('<span class="fa fa-cloud-download"></span> ');
             });
         }elseif($user->hasRole('Colaborador')){
             Menu::make('BackeckAdminNavBar', function ($menu) {          
