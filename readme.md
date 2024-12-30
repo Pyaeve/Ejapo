@@ -6,7 +6,7 @@ adecuada a la nueva normativa vigente Ley N° 6380/2019 DE MODERNIZACIÓN Y SIMP
 
 ## Instrucciones para su Implementación 
 
-   1. Clonar el Repo de Github: clone https://github.com/Pyaeve/Ejapo
+   1. Clonar el Repo de Github: git clone https://github.com/Pyaeve/Ejapo
    2. Instalar una Base de Datos Nysql y importar el el archivo ejapo.sql que esta en database/backup
    3. Modificar el archivo .env para dar accesio a la base de datos
    4. Correr un Web Server local tipo LAMP WAMPP XAMPP o MAMMP 
