@@ -1,10 +1,8 @@
 
 # Ejapo Pyaeve(Hazlo mas rapido)
 
-es una web app crea da enlaravel 5 para liquidacion de impuestos y presentacion de DDJJ 
-adecuada a la nueva normativa vigente Ley N° 6380/2019
-DE MODERNIZACIÓN Y SIMPLIFICACIÓN DEL SISTEMA TRIBUTARIO NACIONAL que en vigencia desde 1 de enero del 2020 el cusl crea nuevos regimes tribuatrios imponibles como IRP e IRE, esta app cubre IVA, e IRP
-
+es una web app creada en laravel 5 para liquidacion de impuestos y presentacion de DDJJ 
+adecuada a la nueva normativa vigente Ley N° 6380/2019 DE MODERNIZACIÓN Y SIMPLIFICACIÓN DEL SISTEMA TRIBUTARIO NACIONAL que en vigencia desde 1 de enero del 2020 el cusl crea nuevos regimes tribuatrios imponibles como IRP e IRE, esta app cubre IVA, e IRP
 
 ## Instrucciones para su Implementación 
 
